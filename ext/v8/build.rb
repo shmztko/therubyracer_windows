@@ -34,7 +34,7 @@ def build_with_system_libv8_gcc
 end
 
 def mingw?
-  RUBY_PLATFORM =~ /mingw/
+  RUBY_PLATFORM =~ /mingw|cygwin/
 end
 
 def build_with_system_libv8
